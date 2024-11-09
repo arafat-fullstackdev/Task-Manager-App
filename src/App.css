@@ -1,0 +1,15 @@
+.app {
+  background-color: dodgerblue;
+  margin: 20px;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  /* height: 10vh; */
+}
+#input {
+  margin: 5px;
+  padding: 5px;
+  color: black;
+}
