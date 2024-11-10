@@ -16,7 +16,7 @@ const App = () => {
   return (
     <>
       <Toaster />
-      <div className="items-center flex flex-col bg-dodgerblue">
+      <div className="items-center text-center flex flex-col bg-dodgerblue">
         <CreatorTask tasks={tasks} setTasks={setTasks} />
         <ListTask tasks={tasks} setTasks={setTasks} />
         <CompleteTask task={tasks} setTasks={setTasks} />
