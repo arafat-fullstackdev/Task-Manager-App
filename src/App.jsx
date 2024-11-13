@@ -3,6 +3,7 @@ import { Toaster } from "react-hot-toast";
 import CreatorTask from "./components/CreatorTask";
 import ListTask from "./components/ListTask";
 import CompleteTask from "./components/CompleteTask";
+import  './App';
 
 const App = () => {
   const [tasks, setTasks] = useState([]);
@@ -16,7 +17,7 @@ const App = () => {
   return (
     <>
       <Toaster />
-      <div className="items-center text-center flex flex-col bg-dodgerblue">
+      <div className="items-center text-center flex flex-col bg-dodgerblue custom-gap">
         <CreatorTask tasks={tasks} setTasks={setTasks} />
         <ListTask tasks={tasks} setTasks={setTasks} />
         <CompleteTask task={tasks} setTasks={setTasks} />

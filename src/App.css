@@ -8,6 +8,10 @@
   flex-direction: column;
   /* height: 10vh; */
 }
+.custom-gap{
+  gap:64px;
+  margin-top:128px;
+}
 #input {
   margin: 5px;
   padding: 5px;

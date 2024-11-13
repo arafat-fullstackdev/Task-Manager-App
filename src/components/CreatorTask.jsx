@@ -17,6 +17,9 @@ const CreatorTask = ({ tasks, setTasks }) => {
     if (task.name.length < 3) {
       return toast.error("A task must have more than 3 character");
     }
+    if (task.name.length > 100) {
+      return toast.error("A task must have more than 100 character");
+    }
     const newTask = { ...task, id: uuidv4() };
     setTask((prev) => {
       const list = [...prev, newTask];
